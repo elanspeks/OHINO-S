@@ -1,0 +1,16 @@
+{
+  "name": "@ohino/types",
+  "version": "1.0.0",
+  "description": "Shared type definitions for OHINO-S",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
