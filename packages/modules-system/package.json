@@ -1,0 +1,20 @@
+{
+  "name": "@ohino/modules-system",
+  "version": "1.0.0",
+  "description": "Module registration and plugin system for OHINO-S",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ohino/types": "workspace:*",
+    "@ohino/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
