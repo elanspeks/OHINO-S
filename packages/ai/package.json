@@ -1,40 +1,9 @@
 {
   "name": "@ohino/ai",
-  "version": "1.0.0",
-  "description": "AI Provider Layer for OHINO-S",
-  "type": "module",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./providers": {
-      "import": "./dist/providers/index.js",
-      "types": "./dist/providers/index.d.ts"
-    },
-    "./chat": {
-      "import": "./dist/chat/index.js",
-      "types": "./dist/chat/index.d.ts"
-    },
-    "./memory": {
-      "import": "./dist/memory/index.js",
-      "types": "./dist/memory/index.d.ts"
-    }
-  },
-  "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "clean": "rm -rf dist"
-  },
-  "dependencies": {
-    "@ohino/core": "workspace:*",
-    "@ohino/types": "workspace:*",
-    "@ohino/prompts": "workspace:*"
-  },
-  "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
-  }
+  "license": "MIT",
+  "private": true,
+  "dependencies": {}
 }
