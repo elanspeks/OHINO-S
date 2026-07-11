@@ -1,40 +1,9 @@
 {
   "name": "@ohino/auth",
-  "version": "1.0.0",
-  "description": "User and child profile management for OHINO-S",
-  "type": "module",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./profiles": {
-      "import": "./dist/profiles/index.js",
-      "types": "./dist/profiles/index.d.ts"
-    },
-    "./storage": {
-      "import": "./dist/storage/index.js",
-      "types": "./dist/storage/index.d.ts"
-    },
-    "./security": {
-      "import": "./dist/security/index.js",
-      "types": "./dist/security/index.d.ts"
-    }
-  },
-  "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "clean": "rm -rf dist"
-  },
-  "dependencies": {
-    "@ohino/core": "workspace:*",
-    "@ohino/types": "workspace:*",
-    "crypto-js": "^4.1.1"
-  },
-  "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
-  }
+  "license": "MIT",
+  "private": true,
+  "dependencies": {}
 }
