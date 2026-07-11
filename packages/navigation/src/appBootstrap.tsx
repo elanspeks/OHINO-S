@@ -39,6 +39,37 @@ export async function bootstrapApp(rootSelector = '#root') {
     return pm;
   });
 
+  // --- register auth and prompts services (minimal registration) ---
+  // register auth.profileService via helper
+  try {
+    // lazy import to avoid circular dependencies during packaging
+    const { registerAuthServices } = await import('@ohino/auth');
+    registerAuthServices(engine.services);
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('Auth services registration skipped:', e);
+  }
+
+  try {
+    const { PromptManager, ConversationHistoryService } = await import('@ohino/prompts');
+    if (!engine.services.has('prompts.manager')) {
+      engine.services.register('prompts.manager', async (loc) => {
+        const storage = await loc.get('storage');
+        return new PromptManager(storage as any);
+      });
+    }
+    if (!engine.services.has('prompts.history')) {
+      engine.services.register('prompts.history', async (loc) => {
+        const storage = await loc.get('storage');
+        return new ConversationHistoryService(storage as any);
+      });
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('Prompts services registration skipped:', e);
+  }
+  // --- end registration ---
+
   // initialize engine services
   await engine.initialize();
 
