@@ -1,0 +1,23 @@
+{
+  "name": "@ohino/module-vision",
+  "version": "1.0.0",
+  "description": "OHINO-S Vision Module - Computer vision preparation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ohino/core": "workspace:*",
+    "@ohino/types": "workspace:*",
+    "@ohino/ui-components": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.2.0"
+  }
+}

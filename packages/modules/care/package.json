@@ -1,0 +1,23 @@
+{
+  "name": "@ohino/module-care",
+  "version": "1.0.0",
+  "description": "OHINO-S Care Module - Special needs support and resources",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ohino/core": "workspace:*",
+    "@ohino/types": "workspace:*",
+    "@ohino/ui-components": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.2.0"
+  }
+}

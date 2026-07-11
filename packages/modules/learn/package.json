@@ -1,0 +1,24 @@
+{
+  "name": "@ohino/module-learn",
+  "version": "1.0.0",
+  "description": "OHINO-S Learn Module - Personalized learning assistance",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ohino/core": "workspace:*",
+    "@ohino/types": "workspace:*",
+    "@ohino/ui-components": "workspace:*",
+    "@ohino/ai": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.2.0"
+  }
+}
