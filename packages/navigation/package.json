@@ -1,43 +1,9 @@
 {
   "name": "@ohino/navigation",
-  "version": "1.0.0",
-  "description": "Navigation, routing, and app shell for OHINO-S",
-  "type": "module",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./router": {
-      "import": "./dist/router/index.js",
-      "types": "./dist/router/index.d.ts"
-    },
-    "./guards": {
-      "import": "./dist/guards/index.js",
-      "types": "./dist/guards/index.d.ts"
-    },
-    "./middleware": {
-      "import": "./dist/middleware/index.js",
-      "types": "./dist/middleware/index.d.ts"
-    }
-  },
-  "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "clean": "rm -rf dist"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-router-dom": "^6.14.0",
-    "@ohino/core": "workspace:*",
-    "@ohino/ui-components": "workspace:*",
-    "@ohino/types": "workspace:*"
-  },
-  "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
-  }
+  "license": "MIT",
+  "private": true,
+  "dependencies": {}
 }
