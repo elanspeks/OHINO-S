@@ -1,6 +1,3 @@
-/**
- * Module Registration and Plugin System
- */
-
-export * from './ModuleRegistry';
-export * from './PluginSystem';
+export * from './types';
+export * from './registry';
+export * from './loader';
